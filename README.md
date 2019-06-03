@@ -1,2 +1,2 @@
 # java
-give brief explanation for java programs
+This repository is to provide brief explanation of java programs.
