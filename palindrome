@@ -1,0 +1,38 @@
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/**
+  if the string is same as reverse of that string, then that string is called as palindrome.
+*/
+
+class Palindrome {
+
+     // read string
+     Scanner scan = new Scanner(System.in);
+     String word = scan.nextLine();
+     
+     // finding reverse of string
+      
+     // NOTE: BELOW ARE THE METHODS WE CAN USE TO FIND REVERSE OF A STRING
+     
+     // Method-1: using for loop to iterate through the string
+     String rev = "";
+     for (int i=word.length()-1;i>=0;i--) {
+      rev = rev + word.charAt(i);
+     }
+     
+     // Method-2: Using StringBuilder. StringBuilder has inbuilt reverse method.
+     StringBuilder builder = new StringBuilder(word);
+     builder.reverse();
+     String rev = builder.toString();
+     
+     // now compare both words and check whether they are same or not.
+     if (word.equals(rev)) {
+          System.out.println("Palindrome");
+     } else {
+          System.out.println("Not Palindrome");
+     }
+     
+}
